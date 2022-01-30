@@ -16,13 +16,13 @@
 <body class="text-center">
     <h1 class="h3 mb-3 font-weight-normal">Enter your name and last name</h1>
 <form class="form-signin" method="post" action="/">
-<!--    <label for="inputName" class="sr-only md-3">Name</label>-->
+    <p>Name and surname must begin with a capital letter, in Latin letters, in one word</p>
     <input pattern="[A-Z][a-z]+\S" type="text" id="inputName" class="form-control md-3 mb-3" name="name" placeholder="Name" required>
 
-<!--    <label for="inputLastname" class="sr-only">Last name</label>-->
     <input pattern="[A-Z][a-z]+\S" type="text" id="inputLastname" class="form-control mb-3" name="lastname" placeholder="Lastname" required>
 
-    <p>Write down your wishes dividing each other by <b>enter</b></p>
+    <p>Write down your wishes dividing each other by <b>enter</b>.
+        Count of wishes should not exceed than <b>10</b></p>
     <textarea rows="11" class="form-control mb-3" name="wish" placeholder="Enter your wishes..." required></textarea>
 
     <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
