@@ -8,10 +8,6 @@ let users_ids = []
 
 socket.on('change count', (data) => {
     users_ids = data.user_ids
-    if (users_ids.length >= 500) {
-        shuffleButtonArea.innerHTML = '<b>So many users for performing the shuffle of wishes</b>'
-    } else
-        shuffleButtonArea.innerHTML = '<button id="shuffle-button" class="btn btn-success" disabled>Shuffle users</button>'
     if (users_ids.length >= 3) {
         shuffleButton.disabled = false
     }
